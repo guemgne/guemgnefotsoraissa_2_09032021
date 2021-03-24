@@ -134,12 +134,12 @@ p { margin: 0;
     border-color: #dcdfdfd7;
 }
 
-/* a :hover {
+a :hover {
     background-color:#deebff;
     transform: scale(0.8);
     cursor: pointer;
     transition: 0.2s all ease-in;
-}   */
+}   
 
 .icon_money {
     border: 3px solid black;
