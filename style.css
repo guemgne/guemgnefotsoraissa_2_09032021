@@ -276,8 +276,8 @@ h4,h3 {
     width: 200px;;
     object-fit: cover;
     margin: 0 auto;
-    /* border-top-left-radius: 15px; 
-    border-top-right-radius: 15px;  */
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;  
     margin-right: 10px;
 }
 
