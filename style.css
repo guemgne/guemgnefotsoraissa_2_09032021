@@ -16,8 +16,8 @@ body {
 }
 
 header,main {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
     
 .logo {
@@ -339,7 +339,89 @@ h3, p, div {
     margin-left: 10px;
     font-weight: bold;
 }
+  /* Mise en forme du contenu les plus populaires */
+.carte_héberg p, .contenu_populair p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+.price {
+    font-weight: bold;
+}
+.tittle_pop {
+    display:flex;
+    align-items: baseline;
+}
+.tittle1, .tittle2 {
+    margin-left: 18px;
+}
+.chart_icon {
+    margin-left: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+}  
+
+.carte_pop img {
+    height: 130px;
+    width: 100px;;
+    object-fit: cover;
+    float: left;
+    margin-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-right: 18px; 
+}
    
+.carte_pop {
+    
+     width: 260px;
+     height: 135px;
+     margin: 10px 0 15px 25px;
+     border-radius: 15px;
+     background-color: #fff;
+     padding: 5px 0px 0px 5px;
+}
+
+.carte_pop p {
+    padding-top: 5px;
+}
+.carte_pop p, .carte_pop h3 {
+    margin-block-start: 0.8em;
+    margin-inline-end: 0.8em;
+}
+    
+.contenu_populair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+   
+.carte_pop h3 p div {
+    float: right;
+
+}
+.plus_populair {
+    background-color: #f2f2f2;
+    flex: 30%;
+}  
+
+
+
+.principal {
+    display: flex ;
+    flex-direction: row;
+    float: right;
+}     
+    
+
+    
+    
+
+
+
+
+
+
 
     
     
