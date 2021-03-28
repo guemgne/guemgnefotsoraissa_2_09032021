@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
@@ -10,9 +11,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: normal;
+    max-width: 100%;
+    
 }
 
-header {
+header,main {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -134,12 +137,12 @@ p { margin: 0;
     border-color: #dcdfdfd7;
 }
 
-a :hover {
+.form_demo :hover {
     background-color:#deebff;
     transform: scale(0.8);
     cursor: pointer;
-    transition: 0.2s all ease-in;
-}   
+    transition: 0.2s all ease;
+}    
 
 .icon_money {
     border: 3px solid black;
@@ -255,51 +258,105 @@ a :hover {
     font-weight: lighter;
 } 
 
-h4,h3 {
+h4 {
     font-weight: lighter;
     font-size: 1.4;
     font-style: normal;
 }
 
-/* mise en forme de la sect hebergements */
+/* mise en forme de la section hebergements */
 
-.card_container {
-    flex: 100%;
+.héberg_marseille {
+    background-color:#f2f2f2 ;
+    flex: 70%;
     height: auto;
-    margin: 0 auto;
-    padding: 25px;
-    background: color #f2f2f2;
-} 
+    margin-right: 25px;
+}
+    
 
 .carte_héberg img {
     height: 100px;
     width: 200px;;
     object-fit: cover;
-    margin: 0 auto;
-    border-top-left-radius: 15px; 
-    border-top-right-radius: 15px;  
-    margin-right: 10px;
-}
-
-.héberg_marseille {
-   flex: 70%;
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-}
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
    
-.carte_héberg {
-    flex: 25%;
-    height: 215px;
-    margin-top: 25px;
+}
+    
+.contenu_héberg {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin-left: 0;
+   margin-right: 20px;
+}
 
+.carte_héberg {
+    width: 185px;
+    height: 194px;
+    margin: 20px 12px 20px 18px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.carte_héberg :hover {
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: 0.2s all; 
 } 
+
 .star_icon {
     display: inline-block;
     font-size: 10px;
     position:  relative;
-
+    color: #0065fc;
 }
+.grey_star{
+    color: grey;
+}
+    
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}  
+
+h3, p, div {
+    box-sizing: border-box;
+    margin :0;
+    padding: 0;
+}
+
+.carte_héberg div,.carte_héberg p, .carte_héberg h3{
+    margin-left: 10px;
+}
+
+.other_page {
+ 
+    margin-top: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+   
+
+    
+    
+    
+    
+    
+    
+
+   
+   
+   
+
+    
+
+    
+    
+
 
    
    
