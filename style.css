@@ -12,20 +12,19 @@ body {
     font-size: 16px;
     font-weight: normal;
     max-width: 100%;
-    
 }
 
-header,main {
-    margin-left: 350px;
-    margin-right: 350px;
+.page {
+    max-width: 1400px;
+    margin: auto;
 }
     
 .logo {
     height: 40px;
     float: left;
-    margin-top: 80px;
-
+    margin-top: 34px;
 } 
+    
     
 ul {
     display: flex;
@@ -110,7 +109,7 @@ p { margin: 0;
 
 /* mise en forme des filtres */
 .filter {
-    margin-right:  30px; ;
+    margin-right: 10px;
 }
 
 .form_demo {
@@ -127,7 +126,6 @@ p { margin: 0;
 .filter_eco {
     display: flex;
     border: 3px solid black;
-    margin-right: -2pc;
     padding: 0px 30px 0px 0px;
     border-top-left-radius: 60px;
     border-left: none;
@@ -137,11 +135,12 @@ p { margin: 0;
     border-color: #dcdfdfd7;
 }
 
-.form_demo :hover {
+
+.filter_eco:hover {
     background-color:#deebff;
     transform: scale(0.8);
     cursor: pointer;
-    transition: 0.2s all ease;
+    transition: 0.2s all ease-in;
 }    
 
 .icon_money {
@@ -162,7 +161,7 @@ p { margin: 0;
 .filter_child {
     display: flex;
     border: 3px solid black;
-    margin-right: -2pc; 
+    margin-left: -12px; 
     padding: 0px 20px 0px 0px;
     border-top-left-radius: 60px;
     border-left: none;
@@ -186,11 +185,17 @@ p { margin: 0;
     padding-top: 20px;
     font-weight: bolder;
 }
+.filter_child:hover {
+    background-color:#deebff;
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}    
 
 .filter_love {
     display: flex;
     border: 3px solid black;
-    margin-right: -2pc;
+    margin-left: -16px;
     padding: 0px 30px 0px 0px;
     border-top-left-radius: 60px;
     border-left: none;
@@ -212,10 +217,17 @@ p { margin: 0;
     padding-top: 20px;
     font-weight: bolder;
 }
+.filter_love:hover {
+    background-color:#deebff;
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}  
+
 .filter_dog {
     display: flex;
     border: 3px solid black;
-    margin-right: 2pc; 
+    margin-left:-18px; 
     padding: 0px 20px 0px 0px;
     border-top-left-radius: 60px;
     border-left: none;
@@ -239,6 +251,12 @@ p { margin: 0;
     padding-top: 20px;
     font-weight: bolder;
 }
+.filter_dog:hover {
+    background-color:#deebff;
+    transform: scale(0.8);
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}    
 
 .info {
     display: flex;
@@ -268,49 +286,63 @@ h4 {
 
 .héberg_marseille {
     background-color:#f2f2f2 ;
-    flex: 70%;
     height: auto;
-    margin-right: 25px;
+    flex: 75%;
+    margin-right: 35px;
+    border-radius: 20px;
 }
+    
     
 
 .carte_héberg img {
     height: 100px;
-    width: 200px;;
+    width: 270px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-   
 }
+    
+   
     
 .contenu_héberg {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    flex-wrap: wrap;
-   margin-left: 0;
-   margin-right: 20px;
+   margin-left: 35px;
+   margin-right: 38.4px;
+   
 }
 
 .carte_héberg {
     width: 185px;
     height: 194px;
-    margin: 20px 12px 20px 18px;
     border-radius: 15px;
     background-color: #fff;
+    padding-right: 4px;
     padding-left: 4px;
     padding-top: 4px;
+    flex-basis: 30%;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-inline-end: 15px;
 }
-.carte_héberg :hover {
-    transform: scale(0.8);
+    
+.carte_héberg:hover {
+    transform: scale(1.1);
     cursor: pointer;
-    transition: 0.2s all; 
-} 
+    background-color: #fff;
+    color: #0065fc; 
+    z-index: 1;
+    box-shadow: 0px 0px 8px 3px rgb(200 200 200 .1);
+    transition: 0.2s;
+    
+}  
 
 .star_icon {
     display: inline-block;
     font-size: 10px;
-    position:  relative;
+    
     color: #0065fc;
 }
 .grey_star{
@@ -327,6 +359,7 @@ h3, p, div {
     box-sizing: border-box;
     margin :0;
     padding: 0;
+    
 }
 
 .carte_héberg div,.carte_héberg p, .carte_héberg h3{
@@ -334,12 +367,14 @@ h3, p, div {
 }
 
 .other_page {
- 
-    margin-top: 40px;
-    margin-left: 10px;
-    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-weight: bolder;
+    padding-bottom: 18px;
 }
-  /* Mise en forme du contenu les plus populaires */
+    
+ 
+/* Mise en forme du contenu les plus populaires */
 .carte_héberg p, .contenu_populair p {
     font-size: 12px;
     font-weight: lighter;
@@ -372,21 +407,24 @@ h3, p, div {
 }
    
 .carte_pop {
-    
-     width: 260px;
-     height: 135px;
-     margin: 10px 0 15px 25px;
-     border-radius: 15px;
-     background-color: #fff;
-     padding: 5px 0px 0px 5px;
+    width: 300px;
+    margin-top: 18px;
+    height: 135px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 5px 0px 0px 5px;
+    box-shadow: 0px 2px 6px rgb(230 230 230);
+    margin-left: 35px;
+    border-radius: 20px;
 }
 
 .carte_pop p {
     padding-top: 5px;
 }
+
 .carte_pop p, .carte_pop h3 {
     margin-block-start: 0.8em;
-    margin-inline-end: 0.8em;
+    margin-inline-end: 0.8em; 
 }
     
 .contenu_populair {
@@ -395,23 +433,48 @@ h3, p, div {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.carte_pop:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: #0065fc; 
+    z-index: 1;
+    box-shadow: 0px 0px 8px 3px rgb(200 200 200 .1);
+    transition: 0.2s;
+}  
    
 .carte_pop h3 p div {
     float: right;
+} 
 
-}
 .plus_populair {
     background-color: #f2f2f2;
     flex: 30%;
+    border-radius: 20px;
+   
 }  
-
-
 
 .principal {
     display: flex ;
     flex-direction: row;
     float: right;
 }     
+
+
+
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+
     
 
     
