@@ -537,19 +537,23 @@ h3, h6, p, div {
 } 
 .activ1 {
     background-color: #fff;
-    box-shadow: 0 0 6px 0px #b1b1b1;
-    padding: 0;
-    padding-bottom: 18px;
+    padding: 0 0 18px 0;
     border-radius: 15px;
-} 
-.activ1 h6 {
-    padding-bottom: 15px;
+    box-shadow: 0 0 6px 0px #b1b1b1;
+    box-sizing: content-box;
 }
-.activ6 h6 {
-    padding-bottom: 5px;
+.activ_list1 :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0px #b1b1b1;
+    color: #0065fc; 
+    transition: 0.2s ;
+    z-index: 1;
+    overflow: hidden;
 }
 
-h6 {
+h6 {margin-top: 10px ;
     margin-left: 15px;
 } 
 
@@ -560,7 +564,9 @@ h6 {
     padding: 0;
     margin-bottom: 58px;
     border-radius: 15px;
-}
+    box-sizing: border-box;
+} 
+
 .activ3 {
     flex-basis: 35%;
     background-color: #fff;
@@ -568,7 +574,9 @@ h6 {
     padding: 0;
     margin-bottom: 0;
     border-radius: 15px;
-}
+    box-sizing: border-box;
+} 
+
 .activ5 {
     flex-basis: 45%;
     background-color: #fff;
@@ -576,6 +584,7 @@ h6 {
     padding: 0;
     margin-bottom: 27px;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 .activ6 {
     flex-basis: 45%;
@@ -583,20 +592,71 @@ h6 {
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
     border-radius: 15px;
+    box-sizing: border-box;
 }  
 
-.activ_list1 :hover {
+
+.activ_list23 :hover {
     transform: scale(1.1);
     cursor: pointer;
     background-color: #fff;
     color: #0065fc; 
     overflow-x: hidden;
-    box-shadow: 0px 0px 3px 0px #b1b1b1;
+    box-shadow: 0px 0px 6px 0px #b1b1b1;
     transition: 0.2s;
     z-index: 1;
 }
+.activ_list56 :hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    color: #0065fc; 
+    overflow-x: hidden;
+    box-shadow: 0px 0px 6px 0px #b1b1b1;
+    transition: 0.2s;
+    z-index: 1;
+}
+    /* mise en forme pied de page */
+.footer_info, .footer_heberg, .footer_help{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+h4 {
+    margin-left: 18px;
+    font-weight: bold;
+}
+.pied_page {
+    margin-bottom: 12px;
+}
+.footer_info{
+    margin-inline-start: -5em;
+}
+.footer_heberg {
+    margin-bottom: 12px;
+    margin-left: 106px;
+    margin-right: 100px;
+}
+.footer_help {
+    margin-inline-end: 15em;
+}
+footer {
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    height: 215px;
+    margin-left: 232px;
+    margin-right: 254px;
+}  
     
-   
+    
     
 
     
