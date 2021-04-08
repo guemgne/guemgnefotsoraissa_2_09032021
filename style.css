@@ -79,9 +79,10 @@ p { margin: 0;
 }
 
 .map {
-    width: 1%;
+    width: 2%;
     border: 1px solid black;
-    padding: 15px 20px ;
+    padding: 15px 30px;
+    padding-left: 16px;
     color: #000; 
     background-color: whitesmoke;
     border-top-left-radius: 15px;
@@ -101,7 +102,7 @@ p { margin: 0;
 }
 
 .search_button {
-    width: 7%;
+    width: 8%;
     font-size: 15px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -509,14 +510,7 @@ h3, h6, p, div {
 .activ_list1 {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    margin: 20px;
-} 
-.activ_list4 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    margin: 20px;
+    margin: 20px 0 15px 0;
 } 
 
 .activ_list23 {
@@ -524,8 +518,7 @@ h3, h6, p, div {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin-right: 20px;
-    margin: 20px;
+    margin: 20px 0 15px 0;
 }
 
 .activ_list56 {
@@ -533,7 +526,7 @@ h3, h6, p, div {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px;
+    margin: 20px 0 15px 0;
 }
 
 .activités_list  {
@@ -547,7 +540,7 @@ h3, h6, p, div {
 .activ1 {
     background-color: #fff;
     padding: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 0 6px 0px #b1b1b1;
     box-sizing: content-box;
     width: 15vw;   
@@ -567,13 +560,17 @@ h6 {margin-bottom: 18px;
     margin-left: 25px;
     margin-top: 8px;
 } 
+.activ1 h6 {
+    padding-bottom: 6px;
+}
 
 .activ2 {
     flex-basis: 52%;
     background-color: #fff;
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
-    border-radius: 15px;
+    border-radius: 20px;
+    margin-bottom: 50px;
     box-sizing: border-box;
     width: 15vw;
 } 
@@ -584,7 +581,7 @@ h6 {margin-bottom: 18px;
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
     margin-bottom: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     box-sizing: border-box;
     width: 15vw;
 } 
@@ -595,7 +592,7 @@ h6 {margin-bottom: 18px;
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
     margin-bottom: 28px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-sizing: border-box;
     width: 15vw;
 }
@@ -604,7 +601,7 @@ h6 {margin-bottom: 18px;
     background-color: #fff;
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
-    border-radius: 15px;
+    border-radius: 20px;
     box-sizing: border-box;
     width: 15vw;
 }  
@@ -650,14 +647,14 @@ h6 {margin-bottom: 18px;
     transition: 0.2s;
     z-index: 1;
 }
-    /* mise en forme pied de page */
+
+/* mise en forme pied de page */
+    
 .footer_info, .footer_heberg, .footer_help{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-
-
+    }
 .footer_nav {
     display: flex;
     align-items: center;
@@ -688,7 +685,103 @@ h4 {
 } 
 .footer {
     background-color: #f2f2f2;
+    width: 100%;
 }
+
+         /* Media Queries */
+@media screen and (min-width: 1390px) {
+    header {
+        margin-left: 60px;
+    }
+    .activ1 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ1 {
+        width: 16vw;
+    }
+    .activ2 img, .activ3 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ5 img, .activ6 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ2, .activ3 {
+        width: 16vw;
+    }
+    .activ5, .activ6 {
+        width: 16vw;
+    }
+}
+@media screen and (min-width: 1160px) and (max-width: 1389px) {  
+    
+    header {
+        margin-left: 70px;
+    }
+    .principal {
+        display: flex ;
+        flex-direction: column-reverse !important;
+    }
+    .plus_populair{
+        margin-left: 70px;
+        padding-bottom: 25px;
+    }
+    .tittle_pop {
+        display: flex;
+        align-items: baseline;
+        margin-left: 43px;
+    }
+    .carte_pop {
+        width: 90vw;
+        height: 100%;
+        margin-left: 20px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+    }
+    .carte_héberg img {
+        width: 293px;
+    }
+    .carte_héberg {
+        flex-basis: 23%;
+    }
+    
+    .activ1 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ1 {
+        width: 16vw;
+    }
+    .activ2 img, .activ3 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ5 img, .activ6 img {
+        object-fit: cover;
+        width: 16vw;
+    }
+    .activ2, .activ3 {
+        width: 16vw;
+    }
+    .activ5, .activ6 {
+        width: 16vw;
+    }
+
+    h3, h6 {
+        font-size: 16px;
+    } 
+    .carte_héberg p, .contenu_populair p {
+        font-size: 14px;
+    } 
+   
+
+} 
+
+
+         
     
     
     
