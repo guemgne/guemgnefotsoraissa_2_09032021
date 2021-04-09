@@ -687,6 +687,9 @@ h4 {
     background-color: #f2f2f2;
     width: 100%;
 }
+.activ3 h6 {
+
+}
 
          /* Media Queries */
 @media screen and (min-width: 1390px) {
@@ -724,7 +727,7 @@ h4 {
         display: flex ;
         flex-direction: column-reverse !important;
     }
-    .plus_populair{
+    .plus_populair {
         margin-left: 70px;
         padding-bottom: 25px;
     }
@@ -776,8 +779,112 @@ h4 {
     .carte_héberg p, .contenu_populair p {
         font-size: 14px;
     } 
-   
+}
+@media screen and (min-width: 944px) and (max-width: 1159px) {
+    header {
+        margin-left: 70px;
+    }
+    .principal {
+        display: flex ;
+        flex-direction: column-reverse !important;
+    }
+    .tittle_pop {
+        display: flex;
+        align-items: baseline;
+        margin-left: 43px;
+    }
+    .carte_pop {
+        width: 90vw;
+        height: 100%;
+        margin-left: 20px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+    }
+    .carte_héberg img {
+        width: 261px;
+    }
+    .tittle1 {
+        margin-left: 41px;
+    }
+    .carte_héberg {
+        flex-basis: 25%;
+    } 
+    .carte_héberg img {
+        height: 100px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .search_button {
+        width: 10%;
+    }
+    .form_demo {
+        flex-wrap: nowrap;
+    }
+    h3, h6 {
+        font-size: 16px;
+    } 
+    .carte_héberg p, .contenu_populair p {
+        font-size: 14px;
+    } 
+    .activ1 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 32vw;
+    }
+    .activ1 {
+        width: 18vw;
+        
+    }
+    .activ2 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 14vw;
+    }
+    .activ3 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 8vw;
+    }
+    .activ5 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 9vw;
+    }
+    .activ6 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 13vw;
+    }
+    .activ2 {
+        width: 18vw;
+        margin-bottom: 15px;
+        flex-basis: 41%;
+    }
 
+    .activ3 {
+        width: 18vw;
+        flex-basis: 30%;
+        margin-bottom: 27px;
+        padding: 25px 0 0 0;
+    }
+    .activ5 {
+        width: 18vw;
+        margin-bottom: 20px;
+        flex-basis: 45%;
+    }
+    .activ6 {
+        width: 18vw;
+        flex-basis: 46%;
+    }
+    .footer_heberg {
+        margin: 0;
+        margin-block-start: -35px;
+    }
+    .activ3 h6 {
+        margin-bottom: 5px;
+    } 
+        
 } 
 
 
