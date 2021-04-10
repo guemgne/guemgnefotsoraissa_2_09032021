@@ -92,7 +92,7 @@ p { margin: 0;
 
 .middle {
     cursor: pointer;
-    border: 1px solid whitesmoke;
+    border: none;
     text-align: center;
     font-size:18px;
     font-weight: bold;
@@ -545,7 +545,7 @@ h3, h6, p, div {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 } 
 .activ1 {
@@ -564,7 +564,6 @@ h3, h6, p, div {
     color: #0065fc; 
     transition: 0.2s ;
     z-index: 1;
-    overflow: hidden;
 }
 .activ4 {
     background-color: #fff;
@@ -582,7 +581,6 @@ h3, h6, p, div {
     color: #0065fc; 
     transition: 0.2s ;
     z-index: 1;
-    overflow: hidden;
 }
 h6 {margin-bottom: 18px;
     margin-left: 25px;
@@ -722,48 +720,15 @@ h4 {
          /* Media Queries */
 @media screen and (min-width: 1390px) {
     header {
-        margin-left: 60px;
+        margin-left: 25px;
     } 
-    .activ1 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 21vw;
-    }
-    .activ4 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 21vw;
-    }
-    .activ2 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 11.8vw;
-    }
-    .activ3 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 5.8vw;
-    }
-    .activ5 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 10.2vw;
-    }
-    .activ6 img {
-        object-fit: cover;
-        width: 16vw;
-        height: 7vw;
-    }
-    .activ1, .activ2, .activ3, .activ4, .activ5, .activ6 {
-        width: 16vw;
-    }
+    
     h3, h6 {
         font-size: 16px;
     } 
     .carte_héberg p, .contenu_populair p {
         font-size: 14px;
-    } 
-   
+    }  
 }
 @media screen and (min-width: 1160px) and (max-width: 1389px) {  
     
@@ -775,7 +740,7 @@ h4 {
         flex-direction: column-reverse !important;
     }
     .plus_populair {
-        margin-left: 70px;
+        margin-right: 40px;
         padding-bottom: 25px;
     }
     .tittle_pop {
@@ -842,6 +807,10 @@ h4 {
     header {
         margin-left: 70px;
     }
+    .plus_populair {
+        margin-right: 30px;
+        padding-bottom: 22px;
+    }
     .principal {
         display: flex ;
         flex-direction: column-reverse !important;
@@ -856,6 +825,9 @@ h4 {
         height: 100%;
         margin-left: 20px;
     } 
+    .chart_icon {
+        margin-left: 545px;
+    }
     .héberg_marseille {
         flex: 100%;
     }
@@ -939,8 +911,187 @@ h4 {
         margin: 0;
         margin-block-start: -35px;
     }
-        
+    .footer_help {
+        margin-inline-end: 4em;
+    }
 } 
+@media screen and (min-width: 585px) and (max-width: 943px) {
+    header {
+        margin-left: 10px;
+    }
+    .search_button {
+        display: none;
+    }
+    .loupe {
+        position: relative;
+        display: block;
+        background-color: #0065fc;
+        height: 54px;
+        width: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 18px;
+    } 
+    .filter {
+        margin-right: 124px;
+        font-size: 17px;
+    }
+    .filter_eco {
+        margin-left: -10px;
+    }
+    .filter_dog {
+        margin-top: 5px;
+    }
+    .filter_love {
+        margin-top: 5px;
+    }
+    .chart_icon {
+        margin-left: 23rem;
+    }
+    .tittle3 {
+        margin-top: 92px;
+    }
+    .principal {
+        display: flex ;
+        flex-direction: column-reverse !important;
+    }
+    .plus_populair {
+        margin-right: 20px;
+        padding-bottom: 25px;
+    }
+    .tittle_pop {
+        display: flex;
+        align-items: baseline;
+        margin-left: 25px;
+    }
+    .carte_pop {
+        width: 90vw;
+        height: 100%;
+        margin-left: 20px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+        margin-right: 24px;
+        margin-top: -72px;
+    }
+    .contenu_héberg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 15px;
+    }   
+    .carte_héberg img {
+        height: 140px;
+        width: 90.6vw;
+    }
+    .carte_héberg {
+        padding: 0 0px 15px 4px;
+        flex: 100%;
+        height: 12vw;
+        margin-left: 0;
+        margin-right: -23px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+        margin-right: 24px;
+        margin-top: -72px;
+    }
+    .other_page {
+        font-size: 1.2rem;
+    }
+    h3, h6 {
+        font-size: 16px;
+    } 
+    .carte_héberg p, .contenu_populair p {
+        font-size: 14px;
+    }
+    .activités_list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 20px;
+    }
+    .activ1 {
+        width: 92vw;
+        margin-left: 28px;
+        height: 44vw;
+    }
+    .activ1 img {
+        width: 92vw ;
+        height: 35vw;
+    }
+    .activ2 {
+        width: 92vw;
+        margin-left: 58px;
+    }
+    .activ2 img {
+        width: 92vw ;
+        height: 30vw;
+    }
+    .activ3 {
+        width: 92vw;
+        margin-left: 58px;
+        height: 15vw;
+    }
+    .activ3 img {
+        height: 28vw;
+        width: 92vw;
+        margin-top: 1px;
+    }
+    .activ4 {
+        width: 92vw;
+        margin-left: 58px;
+        
+    }
+    .activ4 img {
+        width: 92vw;
+        height: 35vw
+    }
+    .activ5 {
+        width: 92vw;
+        margin-left: 58px;
+    }
+    .activ5 img {
+        width: 92vw;
+        height: 29vw;
+    }
+    .activ6 {
+        width: 92vw;
+        margin-left: 58px;
+    }
+    .activ6 img {
+        width: 92vw;
+    height: 32vw;
+    }
+    .footer_nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .footer_info {
+        margin-left: -12rem;
+        margin-bottom: -2rem;
+    }
+    .footer_help {
+        margin-left: -4rem;
+        margin-block-start: 0;
+    }
+    .footer_heberg {
+        margin-left: -10rem;
+        margin-top: 2rem;
+    }
+    h4 {
+        font-size: 18px;
+    }
+
+}
 
 
          
