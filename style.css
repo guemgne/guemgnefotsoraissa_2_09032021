@@ -475,6 +475,13 @@ h3, h6, p, div {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
 }
+.activ4 img {
+    object-fit: cover;
+    width: 15vw;
+    height: 18vw;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}
     
 .activ2 img{
     object-fit: cover;
@@ -510,15 +517,19 @@ h3, h6, p, div {
 .activ_list1 {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 15px -40px;
 } 
-
+.activ_list4 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 15px -75px;
+} 
 .activ_list23 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 15px -75px;
 }
 
 .activ_list56 {
@@ -526,7 +537,7 @@ h3, h6, p, div {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px 0 15px 0;
+    margin: 20px 0 15px -80px;
 }
 
 .activités_list  {
@@ -535,7 +546,7 @@ h3, h6, p, div {
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -20px;
+    
 } 
 .activ1 {
     background-color: #fff;
@@ -555,13 +566,33 @@ h3, h6, p, div {
     z-index: 1;
     overflow: hidden;
 }
-
+.activ4 {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0px #b1b1b1;
+    box-sizing: content-box;
+    width: 15vw;   
+}
+.activ4:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0px #b1b1b1;
+    color: #0065fc; 
+    transition: 0.2s ;
+    z-index: 1;
+    overflow: hidden;
+}
 h6 {margin-bottom: 18px;
     margin-left: 25px;
     margin-top: 8px;
 } 
 .activ1 h6 {
     padding-bottom: 6px;
+}
+.activ4 h6 {
+    padding-bottom: 5px;
 }
 
 .activ2 {
@@ -687,36 +718,52 @@ h4 {
     background-color: #f2f2f2;
     width: 100%;
 }
-.activ3 h6 {
-
-}
 
          /* Media Queries */
 @media screen and (min-width: 1390px) {
     header {
         margin-left: 60px;
-    }
+    } 
     .activ1 img {
         object-fit: cover;
         width: 16vw;
+        height: 21vw;
     }
-    .activ1 {
-        width: 16vw;
-    }
-    .activ2 img, .activ3 img {
+    .activ4 img {
         object-fit: cover;
         width: 16vw;
+        height: 21vw;
     }
-    .activ5 img, .activ6 img {
+    .activ2 img {
         object-fit: cover;
         width: 16vw;
+        height: 11.8vw;
     }
-    .activ2, .activ3 {
+    .activ3 img {
+        object-fit: cover;
+        width: 16vw;
+        height: 5.8vw;
+    }
+    .activ5 img {
+        object-fit: cover;
+        width: 16vw;
+        height: 10.2vw;
+    }
+    .activ6 img {
+        object-fit: cover;
+        width: 16vw;
+        height: 7vw;
+    }
+    .activ1, .activ2, .activ3, .activ4, .activ5, .activ6 {
         width: 16vw;
     }
-    .activ5, .activ6 {
-        width: 16vw;
-    }
+    h3, h6 {
+        font-size: 16px;
+    } 
+    .carte_héberg p, .contenu_populair p {
+        font-size: 14px;
+    } 
+   
 }
 @media screen and (min-width: 1160px) and (max-width: 1389px) {  
     
@@ -753,26 +800,37 @@ h4 {
     
     .activ1 img {
         object-fit: cover;
-        width: 16vw;
+        width: 21vw;
+        height: 27vw;
     }
-    .activ1 {
-        width: 16vw;
-    }
-    .activ2 img, .activ3 img {
+    .activ4 img {
         object-fit: cover;
-        width: 16vw;
+        width: 21vw;
+        height: 27vw;
     }
-    .activ5 img, .activ6 img {
+    .activ2 img {
         object-fit: cover;
-        width: 16vw;
+        width: 21vw;
+        height: 12vw;
     }
-    .activ2, .activ3 {
-        width: 16vw;
+    .activ3 img {
+        object-fit: cover;
+        width: 21vw;
+        height: 8vw;
     }
-    .activ5, .activ6 {
-        width: 16vw;
+    .activ5 img {
+        object-fit: cover;
+        width: 21vw;
+        height: 10vw;
     }
-
+    .activ6 img {
+        object-fit: cover;
+        width: 21vw;
+        height: 11vw;
+    }
+    .activ1, .activ2, .activ3, .activ4, .activ5, .activ6  {
+        width: 21vw;
+    }
     h3, h6 {
         font-size: 16px;
     } 
@@ -832,10 +890,6 @@ h4 {
         width: 18vw;
         height: 32vw;
     }
-    .activ1 {
-        width: 18vw;
-        
-    }
     .activ2 img {
         object-fit: cover;
         width: 18vw;
@@ -846,6 +900,11 @@ h4 {
         width: 18vw;
         height: 8vw;
     }
+    .activ4 img {
+        object-fit: cover;
+        width: 18vw;
+        height: 32vw;
+    }
     .activ5 img {
         object-fit: cover;
         width: 18vw;
@@ -854,23 +913,22 @@ h4 {
     .activ6 img {
         object-fit: cover;
         width: 18vw;
-        height: 13vw;
+        height: 11vw;
+    }
+    .activ1, .activ4 {
+        width: 18vw;
+        height: 39vw;
     }
     .activ2 {
         width: 18vw;
-        margin-bottom: 15px;
         flex-basis: 41%;
     }
-
     .activ3 {
         width: 18vw;
         flex-basis: 30%;
-        margin-bottom: 27px;
-        padding: 25px 0 0 0;
     }
     .activ5 {
         width: 18vw;
-        margin-bottom: 20px;
         flex-basis: 45%;
     }
     .activ6 {
@@ -881,9 +939,6 @@ h4 {
         margin: 0;
         margin-block-start: -35px;
     }
-    .activ3 h6 {
-        margin-bottom: 5px;
-    } 
         
 } 
 
