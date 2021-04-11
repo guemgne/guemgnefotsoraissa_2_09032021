@@ -955,7 +955,7 @@ h4 {
         margin-top: 5px;
     }
     .chart_icon {
-        margin-left: 24rem;
+        margin-left: 16rem;
     }
     .tittle3 {
         margin-top: 92px;
@@ -1000,7 +1000,7 @@ h4 {
         flex: 100%;
         height: 12vw;
         margin-left: 0;
-        margin-right: -23px;
+        margin-right: -22px;
     } 
     .héberg_marseille {
         flex: 100%;
@@ -1165,7 +1165,7 @@ h4 {
     .héberg_marseille {
         flex: 100%;
         margin-right: 14px;
-        margin-top: -30px;
+        margin-top: -32px;
     }
     .contenu_héberg {
         display: flex;
@@ -1189,6 +1189,10 @@ h4 {
         flex: 100%;
         margin-right: 14px;
         margin-top: -32px;
+    }
+    .other_page {
+        margin-top: 18px;
+        padding-bottom: 10px;
     }
     h3, h6 {
         font-size: 16px;
@@ -1254,7 +1258,7 @@ h4 {
     }
     .activ6 img {
         width: 92vw;
-    height: 32vw;
+        height: 32vw;
     }
     .footer_nav {
         display: flex;
@@ -1277,6 +1281,190 @@ h4 {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 363px) {
+    header{
+        margin-left: 10px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: baseline;
+        float: right;
+        margin-top: 39px;
+        margin-inline-end: 0.8rem;
+    } 
+    .filter {
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .filter_eco {
+        margin-left: -2px;
+    }
+    .filter_dog {
+        margin-top: 5px;
+    }
+    .filter_love {
+        margin-top: 5px;
+    }
+    .filter_child {
+        margin-top: 5px;
+    }
+    .search_button {
+        display: none;
+    }
+    .loupe {
+        position: relative;
+        display: block;
+        background-color: #0065fc;
+        height: 54px;
+        width: 50px;
+        border-radius: 10px;
+        line-height: 50px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+    }
+    .principal {
+        display: flex ;
+        flex-direction: column-reverse !important;
+    }
+    .plus_populair {
+        margin-right: 10px;
+        padding-bottom: 15px;
+    }
+    .tittle_pop {
+        display: flex;
+        align-items: baseline;
+        margin-left: 10px;
+    }
+    .carte_pop {
+        width: 90vw;
+        height: 100%;
+        margin-left: 10px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+        margin-right: 10px;
+        margin-top: -15px;
+    }
+    .contenu_héberg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 4px;
+    }   
+    .carte_héberg img {
+        height: 140px;
+        width: 91vw;
+    }
+    .carte_héberg {
+        padding: 0 0 15px 4px;
+        flex: 100%;
+        height: 12vw;
+        margin-left: 0;
+        margin-right: -15px;
+    } 
+    .héberg_marseille {
+        flex: 100%;
+        margin-right: 7px;
+        margin-top: -16px;
+    }
+    .other_page {
+        margin-top: 14px;
+        padding-bottom: 5px;
+    }
+    h3, h6 {
+        font-size: 14px;
+    } 
+    .carte_héberg p, .contenu_populair p {
+        font-size: 12px;
+    }
+    .activités_list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 20px;
+    }
+    .activ1 {
+        width: 92vw;
+        margin-left: 30px;
+        height: 44vw;
+    }
+    .activ1 img {
+        width: 92vw ;
+        height: 35vw;
+    }
+    .activ2 {
+        width: 92vw;
+        margin-left: 60px;
+    }
+    .activ2 img {
+        width: 92vw ;
+        height: 30vw;
+    }
+    .activ3 {
+        width: 92vw;
+        margin-left: 60px;
+        height: 15vw;
+    }
+    .activ3 img {
+        height: 28vw;
+        width: 92vw;
+        margin-top: 1px;
+    }
+    .activ4 {
+        width: 92vw;
+        margin-left: 60px;
+        
+    }
+    .activ4 img {
+        width: 92vw;
+        height: 35vw
+    }
+    .activ5 {
+        width: 92vw;
+        margin-left: 60px;
+    }
+    .activ5 img {
+        width: 92vw;
+        height: 29vw;
+    }
+    .activ6 {
+        width: 92vw;
+        margin-left: 60px;
+    }
+    .activ6 img {
+        width: 92vw;
+        height: 32vw;
+    }
+    .footer_nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .footer_info {
+        margin-left: -3rem;
+    }
+    .footer_help {
+        margin-right: 10rem;
+        margin-top: -1rem;
+    }
+    .footer_heberg {
+        margin-left: -1rem;
+        margin-top: 0;
+    }
+    h4 {
+        font-size: 14px;
+    }
+}
+
 
 
          
