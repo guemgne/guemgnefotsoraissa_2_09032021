@@ -20,7 +20,7 @@ body {
 .logo {
     height: 40px;
     float: left;
-    margin-right: 24rem;
+    margin-right: 40rem;
     padding-top: 60px;
 } 
 
@@ -37,7 +37,10 @@ body {
     justify-content: space-between;
 }
 
-.list_in {
+.list_in1 {
+    display: inline-block;
+}
+.list_in2 {
     display: inline-block;
 }
 
@@ -60,7 +63,10 @@ body {
     padding-left: 20px;
     padding-bottom: 10px;
 }
-.list_in {
+.list_in1 {
+    padding-top: 60px 
+} 
+.list_in2 {
     padding-top: 60px 
 } 
 .list_out {
@@ -99,15 +105,6 @@ a {
 .entête {
     margin-bottom: 26px;
 }
-
-
-
-
-
-    
-    
-
-       
 
 /* mise en forme de la barre de recherche */
 
@@ -394,11 +391,10 @@ h3, h6 {
     font-style: normal;
 }  
 
-h3, h6, p, div {
+.star_icon, h3, h6, p {
     box-sizing: border-box;
     margin :0;
     padding: 0;
-   position: relative; 
 }
 
 .carte_héberg div,.carte_héberg p, .carte_héberg h3{
@@ -445,7 +441,7 @@ h3, h6, p, div {
     width: 150px;
     object-fit: cover;
     float: left;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-right: 18px; 
@@ -715,6 +711,8 @@ h6 {margin-bottom: 18px;
     transition: 0.2s;
     z-index: 1;
 }
+.tittle1 {margin-left: 25px;} 
+.tittle3 {margin-left: 25px;}
 
 /* mise en forme pied de page */
     
@@ -756,7 +754,7 @@ h6 {margin-bottom: 18px;
 }
 
          /* Media Queries */
-/* @media screen and (min-width: 1390px) {
+@media screen and (min-width: 1390px) {
    .logo, h1, p, .search, .filter, .info {
        margin-left: 20px;
     }
@@ -766,9 +764,11 @@ h6 {margin-bottom: 18px;
     } 
     .carte_héberg p, .contenu_populair p {
         font-size: 13px;
-    }  
-} */
-@media screen and (min-width: 1160px) and (max-width: 1389px) {  
+    } 
+    
+} 
+@media screen and (min-width: 1107px) and (max-width: 1389px) { 
+    .logo { margin-right: 32rem;} 
     
     .navbar, .titre1, .paragraph, .search, .form_demo, .info {
         margin-left: 30px;
@@ -789,7 +789,7 @@ h6 {margin-bottom: 18px;
         margin-left: 43px;
     }
     .chart_icon {
-        margin-left: 46rem;
+        margin-left: 43rem;
     }
     .carte_pop {
         width: 90vw;
@@ -847,7 +847,8 @@ h6 {margin-bottom: 18px;
         font-size: 14px;
     } 
 }
- @media screen and (min-width: 944px) and (max-width: 1159px) {
+@media screen and (min-width: 964px) and (max-width: 1106px) {
+    .logo {margin-right: 24rem;}
     .navbar, .titre1, .paragraph, .search, .form_demo, .info {
         margin-left: 30px;
     }
@@ -871,32 +872,31 @@ h6 {margin-bottom: 18px;
         margin-left: 20px;
     } 
     .chart_icon {
-        margin-left: 44rem;
+        margin-left: 38rem;
     }
     .héberg_marseille {
         flex: 100%;
         margin-left: 30px;
         margin-right: 5px;
     }
+    .contenu_héberg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }  
+    .carte_héberg {padding: 0 4px 15px 4px;} 
     .carte_héberg img {
-        width: 261px;
-    }
-    .tittle1 {
-        margin-left: 41px;
-    }
-    .carte_héberg {
-        flex-basis: 24%;
-    } 
-    .carte_héberg img {
-        height: 100px;
-        width: 250px;
+        height: 25vw;
+        width: 87vw;
         object-fit: cover;
     }
     .search_button {
         width: 10%;
     }
-    .form_demo {
-        flex-wrap: nowrap;
+    .filter_dog {
+        margin-top: 8px;
+        margin-left: 88px;
     }
     h3, h6 {
         font-size: 16px;
@@ -962,7 +962,8 @@ h6 {margin-bottom: 18px;
         margin-inline-end: 4em;
     }
 } 
-@media screen and (min-width: 585px) and (max-width: 943px) {
+@media screen and (min-width: 560px) and (max-width: 963px) {
+    .logo {margin-right: 0;}
     .navbar, .titre1, .paragraph, .search, .form_demo, .info {
         margin-left: 30px;
     }
@@ -988,9 +989,6 @@ h6 {margin-bottom: 18px;
     .filter_love {
         margin-top: 5px;
     }
-    .chart_icon {
-        margin-left: 20rem;
-    }
     .tittle3 {
         margin-top: 92px;
         margin-left: 36px;
@@ -1000,7 +998,7 @@ h6 {margin-bottom: 18px;
         flex-direction: column-reverse !important;
     }
     .plus_populair {
-        margin-left: 12px;
+        margin-left: 30px;
         padding-bottom: 25px;
         margin-top: -70px;
     }
@@ -1009,6 +1007,7 @@ h6 {margin-bottom: 18px;
         flex-direction: row;
         justify-content: space-between;
     }
+    .tittle2 {margin-left: 12px;}
     .carte_pop {
         width: 90vw;
         height: 100%;
@@ -1025,14 +1024,13 @@ h6 {margin-bottom: 18px;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        margin-left: 15px;
     }   
     .carte_héberg img {
         height:27vw;
         width: 91vw;
     }
     .carte_héberg {
-        padding: 0 0px 15px 4px;
+        padding: 0 4px 15px 4px;
         flex: 100%;
         height: 12vw;
         margin-left: 0;
@@ -1132,37 +1130,43 @@ h6 {margin-bottom: 18px;
         font-size: 18px;
     }
 }
-@media screen and (min-width: 364px) and (max-width: 584px) {
+@media screen and (min-width: 428px) and (max-width: 559px) {
    
     .navbar, .titre1, .paragraph, .search, .form_demo, .info {
-        margin-left: 30px;
+        margin-left: 65px;
     }
-    .navbar {
-        display: flex;
-        flex-direction: row-reverse;
+    .list_out {
+        margin-left: 28rem;
+        margin-top: -16rem;
     }
-    .sign_in {
-        margin-block-end: 5rem;
+    .list_in1 {
+        padding-top: 25px;
+        margin-left: -3rem;
     }
-   
+    .list_in2 {
+        padding-top: 25px;
+        margin-left: 20rem;
+    }
+    
     .filter {
         margin-right: 80px;
         font-size: 17px;
     }
     .filter_eco {
-       margin-left: -10px;
+        margin-top: 18px;
+       margin-left: -69px;
     }
     .filter_dog {
-        margin-top: 5px;
-        margin-left: 7rem;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .filter_love {
-        margin-top: 5px;
-        margin-left: 7rem;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .filter_child {
-        margin-top: 5px;
-        margin-left: 7rem;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .search_button {
         display: none;
@@ -1187,7 +1191,7 @@ h6 {margin-bottom: 18px;
         float: none;
     }
     .plus_populair {
-        margin-right: 14rem;
+        margin-right: 3rem;
         padding-bottom: 20px;
         
     }
@@ -1197,7 +1201,8 @@ h6 {margin-bottom: 18px;
         margin-left: 16rem
     }
     .contenu_populair{
-        margin-left: 10rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
     }
     .chart_icon {
         margin-right: 45px
@@ -1205,13 +1210,14 @@ h6 {margin-bottom: 18px;
     .carte_pop {
         width: 100vw;
         height: 100%;
-        margin-left: 127px;
-       
+        margin-left: 7rem;
     } 
+    .tittle1 {margin-left: 20rem;}
+    .tittle2 {margin-left: 50px;}
     .héberg_marseille {
         flex: 100%;
-      
         margin-top: 50px;
+        background-color: #fff;
     }
     .contenu_héberg {
         display: flex;
@@ -1221,29 +1227,30 @@ h6 {margin-bottom: 18px;
     }   
     .carte_héberg img {
         height: 148px;
-        width: 97vw;
+        width: 122vw;
     }
     .carte_héberg {
-        
-        padding: 0 0px 15px 4px;
-        flex: 100%;
-        height: 12vw;
-        margin-left: 109px;
+        padding: 0 4px 20px 4px;
+        width: 122vw;
+        margin-left: 18rem;
+        box-shadow: 0 0 6px 0 #b1b1b1;
     } 
     .other_page {
-        margin-top: 18px;
+        margin-top: 32px;
         padding-bottom: 10px;
+        margin-left: 77vw;
+        font-size: 20px;
     }
     h3, h6 {
-        font-size: 16px;
+        font-size: 20px;
     } 
     .carte_héberg p, .contenu_populair p {
-        font-size: 14px;
+        font-size: 16px;
     }
    
     .tittle3 {
         margin-top: 60px;
-        margin-left: 20px;
+        margin-left: 62px;
     }    
     .activités_list {
         display: flex;
@@ -1254,56 +1261,53 @@ h6 {margin-bottom: 18px;
         padding: 20px;
     }
     .activ1 {
-        width: 115vw;
-         margin-left: 23px;
-         height: 55vw;
+        width: 124vw;
+        margin-left: 15rem;
     }
     .activ1 img {
-        width: 115vw ;
+        width: 124vw ;
         height: 44vw;
     }
     .activ2 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 124vw;
+        margin-left: 15rem;
     }
     .activ2 img {
-        width: 92vw ;
-        height: 30vw;
+        width: 124vw ;
+        height: 44vw;
     }
     .activ3 {
-        width: 92vw;
-        margin-left: 60px;
-        height: 15vw;
+        width: 124vw;
+        margin-left: 15rem;
     }
     .activ3 img {
-        height: 28vw;
-        width: 92vw;
+        height: 44vw;
+        width: 124vw;
         margin-top: 1px;
     }
     .activ4 {
-        width: 92vw;
-        margin-left: 60px;
-        
+        width: 124vw;
+        margin-left: 15rem;    
     }
     .activ4 img {
-        width: 92vw;
-        height: 35vw
+        width: 124vw;
+        height: 44vw
     }
     .activ5 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 124vw;
+        margin-left: 15rem;
     }
     .activ5 img {
-        width: 92vw;
-        height: 29vw;
+        width: 124vw;
+        height: 44vw;
     }
     .activ6 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 124vw;
+        margin-left: 15rem;
     }
     .activ6 img {
-        width: 92vw;
-        height: 32vw;
+        width: 124vw;
+        height: 44vw;
     }
     .footer_nav {
         display: flex;
@@ -1325,40 +1329,50 @@ h6 {margin-bottom: 18px;
     h4 {
         font-size: 16px;
     }
+    .footer {width: 800px;}
 }
 
-@media screen and (max-width: 363px) {
-    header{
-        margin-left: 10px;
+@media screen and (min-width: 320px) and (max-width: 427px) {
+    body {font-size: 24px;}
+    .logo {height: 60px;}
+    .nav_menu {
+        border-bottom: 5px solid #f2f2f2;
     }
-    ul {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        align-items: baseline;
-        float: right;
-        margin-top: 39px;
-        margin-inline-end: 0.8rem;
-    } 
+    .navbar, .titre1, .paragraph, .search, .form_demo, .info {
+        margin-left: 70px;
+    }
+    .list_out {
+        margin-left: 22rem;
+        margin-top: -20rem;
+    }
+    .list_in1 {
+        padding-top: 25px;
+        margin-left: -3rem;
+    }
+    .list_in2 {
+        padding-top: 25px;
+        margin-left: 11rem;
+    }
+    
     .filter {
-        margin-right: 30px;
-        font-size: 15px;
+        margin-right: 60px;
+        font-size: 24px;
     }
     .filter_eco {
-        margin-left: -39px;
-        margin-top: 5px;
+       margin-top: 18px;
+       margin-left: 22px;
     }
     .filter_dog {
-        margin-top: 5px;
-        margin-left: 40px;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .filter_love {
-        margin-top: 5px;
-        margin-left: 18px;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .filter_child {
-        margin-top: 5px;
-        margin-left: -30px;
+        margin-top: 8px;
+        margin-left: 2rem;
     }
     .search_button {
         display: none;
@@ -1374,64 +1388,80 @@ h6 {margin-bottom: 18px;
         border: none;
         cursor: pointer;
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
     }
     .principal {
         display: flex ;
         flex-direction: column-reverse !important;
+        align-items: center;
+        float: none;
     }
     .plus_populair {
-        margin-right: 10px;
-        padding-bottom: 15px;
+        margin-right: 3rem;
+        padding-bottom: 20px;
+        
     }
     .tittle_pop {
         display: flex;
         align-items: baseline;
-        margin-left: 10px;
+        margin-left: 10rem
+    }
+    .contenu_populair{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    .chart_icon {
+        margin-right: 45px
     }
     .carte_pop {
-        width: 90vw;
+        width: 162vw;
         height: 100%;
-        margin-left: 10px;
+        margin-left: 22rem;
     } 
+    .carte_pop img {
+        height: 170px;
+    }
+    .tittle1 {margin-left: 36rem;}
+    .tittle2 {margin-left: 22rem;}
+    .titre_info { font-size: 22px;}
     .héberg_marseille {
         flex: 100%;
-        margin-right: 10px;
-        margin-top: -15px;
+        margin-top: 50px;
+        background-color: #fff;
     }
     .contenu_héberg {
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        margin-left: 4px;
     }   
     .carte_héberg img {
-        height: 140px;
-        width: 91vw;
+        height: 155px;
+        width: 191vw;
     }
     .carte_héberg {
-        padding: 0 0 15px 4px;
-        flex: 100%;
-        height: 12vw;
-        margin-left: 0;
-        margin-right: -30px;
+        padding: 0 4px 20px 4px;
+        width: 191vw;
+        margin-left: 32rem;
+        box-shadow: 0 0 6px 0 #b1b1b1;
     } 
-    .héberg_marseille {
-        flex: 100%;
-        margin-right: 7px;
-        margin-top: -16px;
-    }
     .other_page {
-        margin-top: 14px;
-        padding-bottom: 5px;
+        margin-top: 32px;
+        padding-bottom: 10px;
+        margin-left: 157vw;
+        font-size: 26px;
     }
     h3, h6 {
-        font-size: 14px;
+        font-size: 28px;
     } 
     .carte_héberg p, .contenu_populair p {
-        font-size: 12px;
+        font-size: 22px;
     }
+   
+    .tittle3 {
+        margin-top: 60px;
+        margin-left: 30px;
+    }    
     .activités_list {
         display: flex;
         justify-content: space-between;
@@ -1441,57 +1471,56 @@ h6 {margin-bottom: 18px;
         padding: 20px;
     }
     .activ1 {
-        width: 92vw;
-        margin-left: 30px;
-        height: 44vw;
+        width: 190vw;
+        margin-left: 30rem;
     }
     .activ1 img {
-        width: 92vw ;
-        height: 35vw;
+        width: 190vw;
+        height: 60vw;
     }
     .activ2 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 190vw;
+        margin-left: 30rem;
     }
     .activ2 img {
-        width: 92vw ;
-        height: 30vw;
+        width: 190vw;
+        height: 60vw;
     }
     .activ3 {
-        width: 92vw;
-        margin-left: 60px;
-        height: 15vw;
+        width: 190vw;
+        margin-left: 30rem;
     }
     .activ3 img {
-        height: 28vw;
-        width: 92vw;
+        width: 190vw;
+        height: 60vw;
         margin-top: 1px;
     }
     .activ4 {
-        width: 92vw;
-        margin-left: 60px;
-        
+        width: 190vw;
+        margin-left: 30rem;   
     }
     .activ4 img {
-        width: 92vw;
-        height: 35vw
+        width: 190vw;
+        height: 60vw;
     }
     .activ5 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 190vw;
+        margin-left: 30rem;
     }
     .activ5 img {
-        width: 92vw;
-        height: 29vw;
+        width: 190vw;
+        height: 60vw;
     }
     .activ6 {
-        width: 92vw;
-        margin-left: 60px;
+        width: 190vw;
+        margin-left: 30rem;
     }
     .activ6 img {
-        width: 92vw;
-        height: 32vw;
+        width: 190vw;
+        height: 60vw;
     }
+  
+    .star_icon {font-size: 10px;}
     .footer_nav {
         display: flex;
         flex-wrap: wrap;
@@ -1499,21 +1528,23 @@ h6 {margin-bottom: 18px;
         flex-direction: column;
     }
     .footer_info {
-        margin-left: -3rem;
+        margin-left: -15rem;
     }
     .footer_help {
-        margin-right: 10rem;
+        margin-right: 25rem;
         margin-top: -1rem;
     }
     .footer_heberg {
-        margin-left: -1rem;
+        margin-left: -15rem;
         margin-top: 0;
     }
+    .footer {width:800px}
+    .titre_foot{font-size: 24px;}
     h4 {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
- */
+ 
 
 
          
