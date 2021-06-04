@@ -28,8 +28,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     float: right;
-    margin-inline-end: 30px;
-    margin-top: -96px;
+    margin-inline-end: 75px;
+    margin-top: -151px;
 }
 
 .list_in1 {
@@ -37,10 +37,7 @@ body {
 }
 .list_in2 {
     display: inline-flex;
-    margin-left: 29px;
-}
-.list_out {
-    margin-top: 30px;
+    
 }
 
 .nav_sign {
@@ -56,13 +53,14 @@ body {
 }
 
 .mini_list {
-   margin-right: 20px;
+   margin-left: 30px;
 }
 .mini_list {
     padding-top: 55px 
 } 
 .list_out {
-    padding-top: 55px;   
+    padding-top: 55px; 
+    margin-left: 25px;  
 } 
 
 .mini_list:hover {
@@ -85,7 +83,7 @@ a {
 .titre1 {
     margin-top: 135px;
     font-weight:bold;
-    font-size: 1.5rem;
+    font-size: 25px;
 }
 
 .paragraph { 
@@ -751,7 +749,8 @@ h6 {margin-bottom: 18px;
 }
 
          /* Media Queries */
-@media screen and (min-width: 1390px) {
+         
+@media screen and (min-width: 1390px) { /* Media Queries écrans très larges */
    .logo, h1, p, .search, .filter, .info {
        margin-left: 20px;
     }
@@ -764,11 +763,10 @@ h6 {margin-bottom: 18px;
     } 
     
 } 
-@media screen and (min-width: 1107px) and (max-width: 1389px) { 
-    .logo { margin-right: 32rem;} 
+@media screen and (min-width: 1107px) and (max-width: 1389px) {  /* Media Queries écrans larges */
     
-    .navbar, .titre1, .paragraph, .search, .form_demo, .info {
-        margin-left: 30px;
+    .logo, .navbar, .titre1, .paragraph, .search, .form_demo, .info {
+        margin-left: 5%;
     }
      .principal {
         display: flex ;
@@ -851,9 +849,9 @@ h6 {margin-bottom: 18px;
         margin-left: 5rem ;
     }
 }
-@media screen and (min-width: 964px) and (max-width: 1106px) {
-    .logo {margin-right: 24rem;}
-    .navbar, .titre1, .paragraph, .search, .form_demo, .info {
+@media screen and (min-width: 964px) and (max-width: 1106px) { /* Media Queries Tablet & Laptop */
+
+    .logo, .navbar, .titre1, .paragraph, .search, .form_demo, .info {
         margin-left: 30px;
     }
     .plus_populair {
@@ -951,13 +949,11 @@ h6 {margin-bottom: 18px;
         margin-inline-end: 2em;
     }
 } 
-@media screen and (min-width: 560px) and (max-width: 963px) {
-    .logo {margin-right: 0;}
+@media screen and (min-width: 551px) and (max-width: 963px) { /* Media Queries Tablet */
     
-    .navbar, .search, .form_demo, .info {
-        margin-left: 30px;
+    .logo, .titre1, .paragraph, .navbar, .search, .form_demo, .info {
+        margin-left: 5%;
     }
-    .titre1, .paragraph {margin-left: 16px;}
     .search_button {
         display: none;
     }
@@ -1043,29 +1039,35 @@ h6 {margin-bottom: 18px;
         align-items: center;
         padding: 20px;
     }
-    .activ1, .activ2, .activ3, .activ4, .activ5, .activ6 {
+    .activ1 {
         flex-basis: 0;
+        width: 93%;
+        margin-left: 4%;
+    }
+    .activ2, .activ3, .activ4, .activ5, .activ6 {
+        flex-basis: 0;
+        width: 100%;
     }
     .activ1 img {
         width: 100% ;
-        height: 35vw;
+        height: 32vw;
     }
     .activ2 img {
         width: 100% ;
-        height: 30vw;
+        height: 32vw;
     }
     .activ3 img {
         width: 100% ;
-        height: 28vw;
+        height: 32vw;
         margin-top: 1px;
     }
     .activ4 img {
         width: 100% ;
-        height: 35vw
+        height: 32vw
     }
     .activ5 img {
         width: 100% ;
-        height: 29vw;
+        height: 32vw;
     }
     .activ6 img {
         width: 100% ;
@@ -1093,177 +1095,43 @@ h6 {margin-bottom: 18px;
         font-size: 18px;
     }
 }
-@media screen and (min-width: 426px) and (max-width: 559px) {
-    .logo, .titre1, .paragraph, .search, .form_demo, .info { 
-        margin-left: 50px;
-    }
-    .nav_sign {
-        margin-left: 12rem;
-    }
-    /*.nav_list {
-        border-bottom: 3px solid #f2f2f2;
-        padding-bottom: 38px;
-    }
-    .list_in2 {
-        margin-left: 38rem;
-    } 
-    .mini_list:hover {
-        color: #0065fc;
-        border-bottom: 1px solid #0065fc;
-        padding-bottom: 38px;
-        padding-top: 0;
-        border-top: none;
-    }*/
-    .middle {
-        width: 80%;
-    }
-    .search_button {
-        display: none;
-    }
-    .loupe {
-        position: relative;
-        display: block;
-        background-color: #0065fc;
-        height: 54px;
-        width: 50px;
-        border-radius: 10px;
-        line-height: 50px;
-        border: none;
-        cursor: pointer;
-        color: #fff;
-        font-size: 16px;
-    }
-    .form_demo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .filter_eco, .filter_child, .filter_love, .filter_dog {
-        margin-top: 15px;
-    }
-    .principal {
-        display: flex ;
-        flex-direction: column-reverse !important;
-        align-items: center;
-        float: none;
-    }
-    .tittle1 {margin-left: 30px;}
-    .tittle3 {
-        margin-left: 45px;
-        margin-top: -2rem;
-        margin-bottom: 0;
-    }
-    .plus_populair {
-        float: none;
-        padding-bottom: 20px;
-        flex: none;
-        padding-right: 5rem;
-    }
-    .chart_icon {
-        margin-right: -50px;
-    }
-    .tittle_pop {
-        display: flex;
-        align-items: baseline;
-    }
-    .contenu_populair{
-        flex-wrap: nowrap;
-    }
-    .carte_pop {
-        width: 355px;
-        margin-left: 20px;
-    }
-    .héberg_marseille {
-        flex: none;
-        margin-right: 0;
-        margin-top: 50px;
-        background-color: #fff;
-    }
-    .contenu_héberg {
-        display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        flex-wrap: nowrap;
-    }
-    .carte_héberg {
-        padding: 0 4px 20px 4px;
-        box-shadow: 0 0 6px 0 #b1b1b1;
-        max-width: 500px;
-        flex-basis: 0;
-        width: 395px;
-        margin-inline-end: 0;
-        margin-left: 0;
-    } 
-    .carte_héberg img {
-        height: 124px;
-        width: 100%;
-    }
-    .activités_list {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 20px;
-    }
-    .activ1, .activ4 {
-        width: 402px;
-    }
-    .activ2, .activ3, .activ5, .activ6 {
-        flex-basis: 0;
-        width: 402px;
-    }
-    .activ1 img, .activ2 img, .activ3 img, .activ4 img, .activ5 img, .activ6 img {
-        width: 100%;
-        height: 220px;
-    }
 
-    .footer_nav {
-        display: flex;
-        margin-top: 50px;
-        flex-direction: column;
-    }
-    .footer_info {
-        margin-right: 3rem ;
-    }
-    .footer_heberg {
-        margin-right: 8rem;
-        margin-top: 5px
-    }
-    .footer_help {
-        margin-top: 5px;
-        margin-left: 1rem;
-       margin-inline-end: 12em;
-    }
-    .titre_foot {margin-left: 2rem;}
-    .pied_page {margin-left: 2rem;}
-}
-@media screen and (min-width: 320px) and (max-width: 425px) {
+/* Media Queries mobiles */
+@media screen  and (max-width: 550px) { /* Media Queries pour des Mobile de taille L,M,S */
     .logo, .titre1, .paragraph, .search, .form_demo, .info { 
-        margin-left: 50px;
+        margin-left: 5%;
+    }
+    .titre1 {
+        padding-top: 40px;
+        border-top: 3px solid #f2f2f2;
+        font-size: 20px;
     }
     .navbar {
-        width: 329px;
-        margin-top: -88px;
-        max-width: 400px;
+        margin-top: -100px;
     }
-
-    .list_out {
-        margin-top: -242px;
-        margin-left: 13rem;
+    .nav_sign {
+        position: absolute;
+        top: 0;
+        right: 0;  
     }
-    .nav_menu {
-        border-bottom: 2px solid #f2f2f2;
+    .list_in1 {
+        position: absolute;
+        left: 0;
     }
-     
-    /* .mini_list:hover { 
+    .list_in2 {
+       position: absolute;
+       right: 0;
+    }
+    .mini_list {
+        padding-bottom: 11px;
+    }
+    .mini_list:hover { 
         color: #0065fc;
         border-bottom: 1px solid #0065fc;
-        padding-bottom: 38px;
-        padding-top: 0;
         border-top: none;
-    }*/
+    }
     .middle {
-        width: 80%;
+        width: 65%;
     }
     .search_button {
         display: none;
@@ -1335,9 +1203,9 @@ h6 {margin-bottom: 18px;
     .carte_héberg {
         padding: 0 4px 20px 4px;
         box-shadow: 0 0 6px 0 #b1b1b1;
-        max-width: 363px;
         flex-basis: 0;
-        width: 266px;
+        width: 100%;
+        max-width: 363px;
         margin-inline-end: 0;
         margin-left: 0;
     } 
@@ -1351,14 +1219,15 @@ h6 {margin-bottom: 18px;
         flex-direction: column;
         flex-wrap: nowrap;
         padding: 20px;
+        align-items: center;
     }
     .activ1, .activ4 {
-        width: 335px;
+        width: 100%;
         max-width: 400px;
     }
     .activ2, .activ3, .activ5, .activ6 {
         flex-basis: 0;
-        width: 335px;
+        width: 100%;
         max-width: 400px;
     }
     .activ1 img, .activ2 img, .activ3 img, .activ4 img, .activ5 img, .activ6 img {
@@ -1366,13 +1235,15 @@ h6 {margin-bottom: 18px;
         height: 190px;
     }
     .footer {
-        width: 430px;
-        max-width: 450px;
+        width: 100%;
     }
     .footer_nav {
         display: flex;
+        align-items: flex-start;
+        margin: unset;
         margin-top: 50px;
         flex-direction: column;
+        margin-left: 5%;
     }
     .footer_info {
         margin-right: 3rem ;
@@ -1383,8 +1254,8 @@ h6 {margin-bottom: 18px;
     }
     .footer_help {
         margin-top: 5px;
-        margin-left: 1rem;
-       margin-inline-end: 12em;
+        margin-left: unset;
+       margin-inline-end: unset;
     }
     .titre_foot {margin-left: 2rem;}
     .pied_page {margin-left: 2rem;}
