@@ -536,19 +536,19 @@ h3, h6 {
 .activ_list1 {
     display: flex;
     flex-direction: column;
-    margin: 20px 15px 15px;
+    margin: 15px 15px 0 20px; 
 } 
 .activ_list4 {
     display: flex;
     flex-direction: column;
-    margin: 20px 16px 15px 15px;
+    margin-top: 15px; 
 } 
 .activ_list23 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px -30px 15px;
+    margin: 15px 15px 0 -25px; 
 }
 
 .activ_list56 {
@@ -556,7 +556,7 @@ h3, h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    margin: 20px 8px 15px;
+    margin: 15px 70px 0 -10px; 
 }
 
 .activités_list  {
@@ -571,8 +571,9 @@ h3, h6 {
     padding: 0;
     border-radius: 20px;
     box-shadow: 0 0 6px 0px #b1b1b1;
-    box-sizing: content-box;
-    width: 80%;  
+    box-sizing: content-box; 
+    height: 100%;
+    width: 15vw;
 }
 .activ1:hover {
     transform: scale(1.1);
@@ -588,8 +589,9 @@ h3, h6 {
     padding: 0;
     border-radius: 20px;
     box-shadow: 0 0 6px 0px #b1b1b1;
-    box-sizing: content-box;
-    width: 90%;   
+    box-sizing: content-box; 
+    height: 100%;
+    width: 15vw;
 }
 .activ4:hover {
     transform: scale(1.1);
@@ -617,9 +619,9 @@ h6 {margin-bottom: 18px;
     box-shadow: 0 0 6px 0px #b1b1b1;
     padding: 0;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     box-sizing: border-box;
-    width: 85%; 
+    width: 15vw;
 } 
 
 .activ3 {
@@ -630,7 +632,7 @@ h6 {margin-bottom: 18px;
     margin-bottom: 0;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 85%; 
+    width: 15vw; 
 } 
 
 .activ5 {
@@ -641,7 +643,7 @@ h6 {margin-bottom: 18px;
     margin-bottom: 28px;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 85%;  
+    width: 15vw;
 }
 .activ6 {
     flex-basis: 47%;
@@ -650,8 +652,8 @@ h6 {margin-bottom: 18px;
     padding: 0;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 85%; 
-}  
+    width: 15vw;
+} 
 
 .activ2:hover {
     transform: scale(1.1);
@@ -694,6 +696,7 @@ h6 {margin-bottom: 18px;
     transition: 0.2s;
     z-index: 1;
 }
+
 .tittle1 {margin-left: 25px;}
 .tittle2 {margin-left: 20px;}
 
@@ -874,6 +877,15 @@ h6 {margin-bottom: 18px;
         flex-basis: 0;
         width: 100%;
     }
+    .activ2, .activ5 {
+        margin-top: 20px;
+    }
+    .activ_list4 {
+        margin: 15px 0 0;
+    }
+    .activ_list56 {
+        margin: 0;
+    }
     .activ1 img {
         width: 100% ;
         height: 32vw;
@@ -1050,9 +1062,15 @@ h6 {margin-bottom: 18px;
         padding: 20px;
         align-items: center;
     }
+    .activ_list56 {
+        margin: 0;
+    }
     .activ1, .activ2, .activ3, .activ4, .activ5, .activ6 {
         flex: 0%;
         width: 90vw;
+    }
+    .activ2, .activ5 {
+        margin-top: 20px;
     }
     .activ1 img, .activ2 img, .activ3 img, .activ4 img, .activ5 img, .activ6 img {
         width: 100%;
