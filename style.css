@@ -846,8 +846,8 @@ h6 {margin-bottom: 18px;
     }
     .contenu_héberg {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
     }   
     .carte_héberg img {
@@ -855,7 +855,9 @@ h6 {margin-bottom: 18px;
         width: 100%;
     }
     .carte_héberg {
-        width: 97%;
+        height: unset;
+        flex-basis: 45%;
+        margin-top: 30px;
     } 
     .other_page {
         font-size: 1.2rem;
@@ -1019,7 +1021,7 @@ h6 {margin-bottom: 18px;
     }
     .plus_populair {
         float: none;
-        padding-bottom: 20px;
+        padding: 14px;
         flex: none;
         margin-left: 0;
     }
@@ -1034,7 +1036,6 @@ h6 {margin-bottom: 18px;
         flex-wrap: nowrap;
     }
     .carte_pop {
-        width: 300px;
         margin-left: 0px;
     }
     .héberg_marseille {
