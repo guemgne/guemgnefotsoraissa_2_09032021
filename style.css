@@ -316,7 +316,7 @@ a {
 /* mise en forme de la section hebergements */
 
 
-.héberg_marseille {
+.heberg_marseille {
     background-color:#f2f2f2 ;
     height: auto;
     flex: 75%;
@@ -325,7 +325,7 @@ a {
     padding-right: 1%;
 }
     
-.carte_héberg img {
+.carte_heberg img {
     height: 100px;
     width: 100%;
     object-fit: cover;
@@ -333,14 +333,14 @@ a {
     border-top-right-radius: 15px;
 }
     
-.contenu_héberg {
+.contenu_heberg {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    flex-wrap: wrap;
 }
 
-.carte_héberg {
+.carte_heberg {
     height: 194px;
     border-radius: 15px;
     background-color: #fff;
@@ -351,7 +351,7 @@ a {
     margin-top: 20px;
 }
     
-.carte_héberg:hover {
+.carte_heberg:hover {
     transform: scale(1.1);
     cursor: pointer;
     background-color: #fff;
@@ -382,7 +382,7 @@ h3, h6 {
     padding: 0;
 }
 
-.carte_héberg div,.carte_héberg p, .carte_héberg h3{
+.carte_heberg div,.carte_heberg p, .carte_heberg h3{
     margin-left: 10px;
 }
 
@@ -395,14 +395,14 @@ h3, h6 {
 }
 
 /* Mise en forme du contenu les plus populaires */
-.carte_héberg p, .contenu_populair p {
+.carte_heberg p, .contenu_populair p {
     font-size: 12px;
     font-weight: lighter;
 }
-.carte_héberg h3 {
+.carte_heberg h3 {
     margin-block-start: 0.8em;
 }
-.carte_héberg p {
+.carte_heberg p {
     margin-block-start: 0.8em;
 }
 .price {
@@ -558,7 +558,7 @@ h3, h6 {
     margin: 15px 60px 0 20px; 
 }
 
-.activités_list  {
+.activites_list  {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -758,10 +758,10 @@ h6 {margin-bottom: 18px;
     .search_button {
         width: 10%;
     }
-    .héberg_marseille {
+    .heberg_marseille {
         margin-right: -2%;
     }
-    .carte_héberg {
+    .carte_heberg {
         width: 31%;
         flex-basis: unset;
     }
@@ -775,7 +775,7 @@ h6 {margin-bottom: 18px;
     h3, h6 {
         font-size: 16px;
     } 
-    .carte_héberg p, .contenu_populair p {
+    .carte_heberg p, .contenu_populair p {
         font-size: 14px;
     } 
     .footer_heberg {
@@ -837,23 +837,23 @@ h6 {margin-bottom: 18px;
         height: 100%;
         margin-left: 15px;
     } 
-    .héberg_marseille {
+    .heberg_marseille {
         flex: 100%;
         margin-right: 14px;
         margin-left: 14px;
         margin-top: 40px;
     }
-    .contenu_héberg {
+    .contenu_heberg {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
     }   
-    .carte_héberg img {
+    .carte_heberg img {
         height:27vw;
         width: 100%;
     }
-    .carte_héberg {
+    .carte_heberg {
         height: unset;
         flex-basis: 45%;
         margin-top: 30px;
@@ -864,10 +864,10 @@ h6 {margin-bottom: 18px;
     h3, h6 {
         font-size: 16px;
     } 
-    .carte_héberg p, .contenu_populair p {
+    .carte_heberg p, .contenu_populair p {
         font-size: 14px;
     }
-    .activités_list {
+    .activites_list {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -1078,29 +1078,29 @@ h6 {margin-bottom: 18px;
         margin-left: 0;
         width: 90vw;
     }
-    .héberg_marseille {
+    .heberg_marseille {
         flex: none;
         margin-right: 0;
         margin-top: 50px;
         background-color: #fff;
     }
-    .contenu_héberg {
+    .contenu_heberg {
         display: flex;
         flex-direction: column;
         justify-content: unset;
         flex-wrap: nowrap;
     }
-    .carte_héberg {
+    .carte_heberg {
         box-shadow: 0 0 6px 0 #b1b1b1;
         flex: 0%;
         width: 94%;
         margin-left: 10px;
     } 
-    .carte_héberg img {
+    .carte_heberg img {
         height: 110px;
         width: 100%;
     }
-    .activités_list {
+    .activites_list {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
