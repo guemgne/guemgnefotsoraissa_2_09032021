@@ -28,7 +28,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     float: right;
-    margin-inline-end: 75px;
     margin-top: -151px;
 }
 
@@ -43,6 +42,7 @@ body {
 .nav_sign {
     display: flex;
     align-items: center;
+    margin-right: 85px;
 }
 
 .nav_menu {
@@ -90,7 +90,7 @@ a {
     font-style: normal;
 }
 
-.entête {
+.head {
     margin-bottom: 26px;
 }
 
@@ -957,16 +957,22 @@ h6 {margin-bottom: 18px;
         flex-direction: column;
     }
     .footer_info {
-        margin-left: 7%;
-        margin-bottom: -2rem;
+       margin-right: 0;
     }
     .footer_heberg {
-        margin-left: -3%;
-        margin-top: 2rem;
+        margin-top: 1%;
+        margin-left: -8%;
+        margin-block-start: unset;
+        margin-right: unset;
     }
     .footer_help {
-        margin-left: -8%;
+        margin-left: -12%;
         margin-top: 0;
+        margin-inline-end: unset;
+        margin-block-start: unset;
+    }
+    .titre_foot {
+        text-align: left;
     }
     h4 {
         font-size: 18px;
