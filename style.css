@@ -778,7 +778,6 @@ h6 {margin-bottom: 18px;
         margin-left: -10rem;
     }
     .footer_help {
-        margin-inline-end: 0;
         margin-left: 5rem ;
     }
 }  
@@ -876,7 +875,7 @@ h6 {margin-bottom: 18px;
         margin: 0;
     }
     .activ_list4 {
-        display: flex;
+    display: flex;
     flex-direction: row;
     margin-top:0; 
     justify-content: center;
@@ -958,14 +957,10 @@ h6 {margin-bottom: 18px;
     .footer_heberg {
         margin-top: 1%;
         margin-left: -8%;
-        margin-block-start: unset;
-        margin-right: unset;
     }
     .footer_help {
         margin-left: -12%;
         margin-top: 0;
-        margin-inline-end: unset;
-        margin-block-start: unset;
     }
     .titre_foot {
         text-align: left;
@@ -1144,8 +1139,7 @@ h6 {margin-bottom: 18px;
     }
     .footer_help {
         margin-left: 5%;
-        margin-block-start: 0;
+        margin-top: 0;
     }
    
 }
-
