@@ -702,8 +702,13 @@ h6 {margin-bottom: 18px;
 
 
 /* mise en forme pied de page */
-    
-.footer_heberg, .footer_help{
+
+.footer_help {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer_heberg {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -955,16 +960,16 @@ h6 {margin-bottom: 18px;
        margin-right: 0;
     }
     .footer_heberg {
-        margin-top: 1%;
-        margin-left: -8%;
+       margin-right: 4rem;
+       margin-top: 0;
     }
     .footer_help {
-        margin-left: -12%;
+        margin-right: 7rem;
         margin-top: 0;
     }
     .titre_foot {
         text-align: left;
-    }
+    } 
     h4 {
         font-size: 18px;
     }
