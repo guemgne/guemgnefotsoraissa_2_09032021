@@ -357,7 +357,7 @@ a {
     background-color: #fff;
     color: #0065fc; 
     z-index: 1;
-    box-shadow: 0px 0px 8px 3px rgb(200 200 200 .1);
+    box-shadow: 0px 0px 8px 3px rgb(200 200 200 );
     transition: 0.2s;
 }  
     
@@ -400,10 +400,10 @@ h3, h6 {
     font-weight: lighter;
 }
 .carte_heberg h3 {
-    margin-block-start: 0.8em;
+    margin-top: 10px;
 }
 .carte_heberg p {
-    margin-block-start: 0.8em;
+    margin-top: 5px;
 }
 .price {
     font-weight: bold;
@@ -449,8 +449,7 @@ h3, h6 {
 }
 
 .carte_pop p, .carte_pop h3 {
-    margin-block-start: 0.8em;
-    margin-inline-end: 0.8em; 
+    margin-top: 10px; 
 }
     
 .contenu_populair {
@@ -466,7 +465,7 @@ h3, h6 {
     background-color: #fff;
     color: #0065fc; 
     z-index: 1;
-    box-shadow: 0px 0px 8px 3px rgb(200 200 200 .1);
+    box-shadow: 0px 0px 8px 3px rgb(200 200 200);
     transition: 0.2s;
 }  
    
