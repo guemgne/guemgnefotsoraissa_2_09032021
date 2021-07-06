@@ -729,16 +729,13 @@ h6 {margin-bottom: 18px;
 .pied_page {
     margin-bottom: 12px;
 }
-
 .footer_heberg {
     margin-right: 15rem;
-    margin-block-start: -35px;
+    margin-top: -35px;
 }
 .footer_help {
-    margin-inline-end: 15em;
-    margin-block-start: -35px;
+    margin-top: -35px;
 }
-
 .pied_page:hover {
     color: #0065fc;
 } 
