@@ -1040,6 +1040,13 @@ h6 {margin-bottom: 18px;
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .filter {margin-right: 154px;}
+    .filter_eco {margin-left: 0;}
+    .filter_child {margin-left: 8px;}
+    .filter_love {margin-left: 8px;}
+    .filter_dog {margin-left: 5px;}
+
+    }
     .filter_eco, .filter_child, .filter_love, .filter_dog {
         margin-top: 15px;
     }
