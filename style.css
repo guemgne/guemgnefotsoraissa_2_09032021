@@ -1037,8 +1037,8 @@ h6 {margin-bottom: 18px;
     }
     .form_demo {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .filter {margin-right: 154px;}
     .filter_eco {margin-left: 0;}
